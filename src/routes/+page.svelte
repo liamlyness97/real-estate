@@ -1,7 +1,11 @@
 <script lang="ts">
 	import heroImg from '$lib/hero.jpg';
 	import strapImg from '$lib/strap.jpg';
+
+	let scrollPos: number = $state(0);
 </script>
+
+<svelte:window bind:scrollY={scrollPos} />
 
 <div
 	class="flex h-[80vh] w-full flex-col items-center justify-center gap-10 rounded-[2.5rem]"
