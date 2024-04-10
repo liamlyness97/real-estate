@@ -1,5 +1,6 @@
 <script lang="ts">
-	import heroImg from '$lib/hero.jpg';
+	import Footer from '$lib/components/Footer.svelte';
+	import Hero from '$lib/components/Hero.svelte';
 	import strapImg from '$lib/strap.jpg';
 
 	let scrollPos: number = $state(0);
@@ -7,15 +8,7 @@
 
 <svelte:window bind:scrollY={scrollPos} />
 
-<div
-	class="flex h-[80vh] w-full flex-col items-center justify-center gap-10 rounded-[2.5rem]"
-	style={`background: url(${heroImg}) no-repeat top center; background-size: cover; background-attachment: fixed;`}
->
-	<p class="text-center text-7xl font-semibold text-white">
-		Buy, Sell & Rent<br />Your Dream Property
-	</p>
-	<div class="w-1/2 rounded-3xl bg-white p-10">Search Box</div>
-</div>
+<Hero />
 
 <div class="flex w-full justify-between gap-10 p-20">
 	<div class="w-1/2">
@@ -90,3 +83,5 @@
 <div class="h-[60vh] w-full">
 	<img class="h-full w-full rounded-3xl object-cover" src={strapImg} alt="" />
 </div>
+
+<Footer />
