@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<form action="" class="mt-10 flex items-end gap-5">
+<form action="" class="mt-10 flex flex-col items-end gap-5 md:flex-row">
 	<div class="w-full md:w-1/4">
 		<label for="location">Location</label><br />
 		<input class="w-full rounded-2xl bg-gray-200 p-2" type="text" placeholder="Enter Location" />
@@ -27,7 +27,7 @@
 			<option value="600000">£600,000</option>
 		</select>
 	</div>
-	<button class="bg-prop h-fit w-full rounded-2xl p-2 font-semibold text-white md:w-1/4"
+	<button class="h-fit w-full rounded-2xl bg-prop p-2 font-semibold text-white md:w-1/4"
 		>Search</button
 	>
 </form>
